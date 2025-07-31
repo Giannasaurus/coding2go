@@ -1,0 +1,17 @@
+html, body {
+    color: #ccc;
+    background-color: #111;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.item-style {
+    background-color: #222;
+    border-radius: 18px;
+    padding: 20px 15px;
+    opacity: 0;
+    transition: 600ms ease;
+}
+
+.show {
+    opacity: 1;
+}
