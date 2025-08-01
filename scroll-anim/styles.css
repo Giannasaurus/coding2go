@@ -12,6 +12,6 @@ html, body {
     transition: 600ms ease;
 }
 
-.show {
+.item-style.show {
     opacity: 1;
 }
