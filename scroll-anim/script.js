@@ -14,9 +14,11 @@ function renderItems() {
 
     wrapper.append(...items);
     document.querySelector('body').appendChild(wrapper);
+
+    return items;
 }
 
-renderItems();
+const renderedItems = renderItems();
 
 const observer = new IntersectionObserver((items) => {
     items.forEach((item) => {
@@ -29,5 +31,4 @@ const observer = new IntersectionObserver((items) => {
     })
 }, {});
 
-const itemElements = queryAll('.item');
-itemElements.forEach((element) => observer.observe(element));
+renderedItems.forEach((item) => observer.observe(item));
